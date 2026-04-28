@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-
 /*
 Apellido: Russo Rodriguez, Nahuel Sebastian
 DNI: 43820382
@@ -17,6 +14,12 @@ DNI: 43569575
 Usuario: PabloBeni
 Entrega: Sí
 */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "GBT/gbt.h"
+
+
 
 int main()
 {
