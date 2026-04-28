@@ -1,0 +1,13 @@
+# Objetos temporales de compilación
+obj/
+
+# Archivos de configuración personal de Code::Blocks
+*.depend
+*.layout
+
+# Ignorar ejecutables en bin pero MANTENER el gbt.dll
+bin/Debug/*.exe
+bin/Release/*.exe
+
+# Esta línea asegura que el DLL NO sea ignorado
+!bin/**/gbt.dll

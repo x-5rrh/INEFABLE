@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1777403027 source:c:\users\huayr\onedrive\documentos\trabajo de topicos\inefable\main.c
+1777405273 source:c:\users\huayr\onedrive\documentos\trabajo de topicos\inefable\main.c
 	<stdio.h>
 	<stdlib.h>
 	"GBT/gbt.h"
