@@ -32,3 +32,59 @@
 1777401411 source:c:\users\huayr\onedrive\documentos\trabajo de topicos\inefable\dibujos.c
 	"dibujos.h"
 
+1778368106 source:v:\universidad\topicos_de_programacion-2026\inefable\figura.c
+	<stdio.h>
+	"figura.h"
+
+1778374523 v:\universidad\topicos_de_programacion-2026\inefable\figura.h
+
+1778445434 source:v:\universidad\topicos_de_programacion-2026\inefable\tablero.c
+	<stdio.h>
+	<stdlib.h>
+	"GBT/gbt.h"
+	"TABLERO.h"
+	"JUEGO.h"
+
+1778445453 v:\universidad\topicos_de_programacion-2026\inefable\tablero.h
+
+1778445736 source:v:\universidad\topicos_de_programacion-2026\inefable\main.c
+	<stdio.h>
+	<stdlib.h>
+	"GBT/gbt.h"
+	"JUEGO.h"
+	"TABLERO.h"
+
+1778364964 v:\universidad\topicos_de_programacion-2026\inefable\lib\gbt_v2026.1c.01\include\gbt\gbt.h
+	"gbt_entrada.h"
+	"gbt_graficos.h"
+	"gbt_logger.h"
+	"gbt_temporizador.h"
+	"gbt_vector.h"
+
+1778364964 v:\universidad\topicos_de_programacion-2026\inefable\lib\gbt_v2026.1c.01\include\gbt\gbt_entrada.h
+	<stdint.h>
+
+1778364964 v:\universidad\topicos_de_programacion-2026\inefable\lib\gbt_v2026.1c.01\include\gbt\gbt_graficos.h
+	<stdint.h>
+
+1778364964 v:\universidad\topicos_de_programacion-2026\inefable\lib\gbt_v2026.1c.01\include\gbt\gbt_logger.h
+
+1778364964 v:\universidad\topicos_de_programacion-2026\inefable\lib\gbt_v2026.1c.01\include\gbt\gbt_temporizador.h
+	<stdint.h>
+
+1778364964 v:\universidad\topicos_de_programacion-2026\inefable\lib\gbt_v2026.1c.01\include\gbt\gbt_vector.h
+	<stdlib.h>
+	<stdint.h>
+
+1778440541 v:\universidad\topicos_de_programacion-2026\inefable\juego.h
+	"TABLERO.h"
+	"FIGURA.h"
+
+1778396041 source:v:\universidad\topicos_de_programacion-2026\inefable\menu.c
+	"MENU.h"
+
+1778395473 v:\universidad\topicos_de_programacion-2026\inefable\menu.h
+
+1778396055 source:v:\universidad\topicos_de_programacion-2026\inefable\juego.c
+	"JUEGO.h"
+

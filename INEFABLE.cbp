@@ -36,7 +36,23 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="FIGURA.h" />
+		<Unit filename="JUEGO.h" />
+		<Unit filename="MENU.h" />
+		<Unit filename="TABLERO.h" />
+		<Unit filename="figura.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="juego.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="menu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tablero.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions />
