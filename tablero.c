@@ -18,21 +18,19 @@ void iniciar_tablero(TABLERO* tablero ,int x, int y, int size_f){
     }
 }
 
-void dibujar_tablero(TABLERO* t, int offset_x, int offset_y){
+void dibujar_tablero(TABLERO* t, int ancla_x, int ancla_y){
     int i, j,
-    total_tablero_x = t->columnas * t->size_f,
-    total_tablero_y = t->filas * t->size_f,
-    init_x = (offset_x - total_tablero_x) / 2,
-    init_y = (offset_y - total_tablero_y) / 2;
+    pixel_x_inicial ,
+    pixel_y_inicial;
 
     for(int fil = 0; fil < t->filas; fil++){
         for(int col = 0; col < t->columnas; col++){
-            int pixel_x_inicial = init_x + (col * t->size_f);
-            int pixel_y_inicial = init_y + (fil * t->size_f);
+            pixel_x_inicial = ancla_x + (col * t->size_f);
+            pixel_y_inicial = ancla_y + (fil * t->size_f);
             if (t->tablero[fil][col] == 1) {
                 dibujar_cuadrado(t, pixel_x_inicial, pixel_y_inicial, 10);
             }else{
-                dibujar_cuadrado(t, pixel_x_inicial, pixel_y_inicial, 9);
+                dibujar_cuadrado(t, pixel_x_inicial, pixel_y_inicial, 7);
             }
         }
     }

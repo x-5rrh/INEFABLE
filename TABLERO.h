@@ -8,6 +8,6 @@ typedef struct{
 }TABLERO;
 
 void iniciar_tablero(TABLERO* tablero, int x, int y, int size_f);
-void dibujar_tablero(TABLERO* t, int offset_x, int offset_y);
+void dibujar_tablero(TABLERO* t, int ancla_x, int ancla_y);
 
 #endif // TABLERO_H_INCLUDED

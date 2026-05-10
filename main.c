@@ -20,29 +20,21 @@ Entrega: Sí
 #include "GBT/gbt.h"
 #include "JUEGO.h"
 #include "TABLERO.h"
-#define MAX_ANCHO 640
-#define MAX_ALTO 480
 
 int main()
 {
     JUEGO juego;
-    // defino caracteristicas del juego
-    juego.tamanio_bloque = 20;
-    juego.tamanio_ancho_ventana = MAX_ANCHO;
-    juego.tamanio_alto_ventana = MAX_ALTO;
-    iniciar_tablero(&juego.tablero, 20, 10, juego.tamanio_bloque);
+    contructor_juego(&juego, 854, 480, 20, 10); //inicializamos todas las propiedades de TDA JUEGO
 
     gbt_iniciar();
-
-    int ventana = gbt_crear_ventana("TETRIS INEFABLE", MAX_ANCHO, MAX_ALTO, 1);
-
+    int ventana = gbt_crear_ventana("TETRIS INEFABLE", juego.offset_x, juego.offset_y, 2);
+    gbt_borrar_backbuffer(15);
     if(ventana != 0){
         printf("ALGO SALIO MAL!!!!");
     }else{
-        dibujar_tablero(&juego.tablero, juego.tamanio_ancho_ventana, juego.tamanio_alto_ventana);
+        dibujar_tablero(&juego.tablero, juego.ancla_x, juego.ancla_y);
         gbt_esperar(3000);
     }
-
     gbt_destruir_ventana();
     gbt_cerrar();
 

@@ -13,11 +13,13 @@ typedef struct{
     int puntos;
     int modo_juego;
     int tamanio_bloque;
-    int tamanio_ancho_ventana;
-    int tamanio_alto_ventana;
+    int offset_x;
+    int offset_y;
+    int ancla_x;
+    int ancla_y;
 }JUEGO;
 
+void contructor_juego(JUEGO* juego, int offset_x, int offset_y, int filas, int columnas);
 void cambiar_estado(JUEGO* juego, int estado);
-void iniciar_juego(JUEGO* juego);
 
 #endif // JUEGO_H_INCLUDED
