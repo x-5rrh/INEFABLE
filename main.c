@@ -18,22 +18,24 @@ Entrega: Sí
 #include <stdio.h>
 #include <stdlib.h>
 #include "GBT/gbt.h"
-#include "JUEGO.h"
-#include "TABLERO.h"
+#include "MAESTRO.h"
 
 int main()
 {
-    JUEGO juego;
-    contructor_juego(&juego, 854, 480, 20, 10); //inicializamos todas las propiedades de TDA JUEGO
-
+    MAESTRO maestro;
+    //GBT
     gbt_iniciar();
-    int ventana = gbt_crear_ventana("TETRIS INEFABLE", juego.offset_x, juego.offset_y, 2);
-    gbt_borrar_backbuffer(15);
-    if(ventana != 0){
+    if(gbt_crear_ventana("TETRIS INEFABLE", 854, 480, 2) != 0){
         printf("ALGO SALIO MAL!!!!");
-    }else{
-        dibujar_tablero(&juego.tablero, juego.ancla_x, juego.ancla_y);
-        gbt_esperar(3000);
+        return 0;
+    }
+    //
+    contructor_juego(&maestro, 854, 480, 20, 10); //inicializamos todas las propiedades de TDA JUEGO
+    while(juego.estado_juego != -1){
+        //*DIBUJO GENERAL
+        alternar_estados(&maestro);
+        gbt_volcar_backbuffer();
+        gbt_esperar(16);
     }
     gbt_destruir_ventana();
     gbt_cerrar();

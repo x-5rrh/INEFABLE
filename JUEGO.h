@@ -1,25 +1,12 @@
-#ifndef JUEGO_H_INCLUDED
-#define JUEGO_H_INCLUDED
-#include "TABLERO.h"
-#include "FIGURA.h"
-
+#ifndef TABLERO_H_INCLUDED
+#define TABLERO_H_INCLUDED
 
 typedef struct{
-    TABLERO tablero;
-    FIGURA figura;
-    int estado_juego;
-    int dificultad;
-    int velocidad;
-    int puntos;
-    int modo_juego;
-    int tamanio_bloque;
-    int offset_x;
-    int offset_y;
-    int ancla_x;
-    int ancla_y;
+    MATRIZ matriz;
+    int size_f;
 }JUEGO;
 
-void contructor_juego(JUEGO* juego, int offset_x, int offset_y, int filas, int columnas);
-void cambiar_estado(JUEGO* juego, int estado);
+void constructor_tablero(JUEGO* j, int x, int y, int size_f);
+void dibujar_tablero(JUEGO* j, int ancla_x, int ancla_y);
 
-#endif // JUEGO_H_INCLUDED
+#endif // TABLERO_H_INCLUDED

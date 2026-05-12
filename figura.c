@@ -1,4 +1,4 @@
 #include <stdio.h>
-#include "figura.h"
+#include "FIGURA.h"
 
 
