@@ -4,8 +4,6 @@
 #include "JUEGO.h"
 #include "MATRIZ.h"
 
-void dibujar_cuadrado(JUEGO*, int, int, int);
-
 void constructor_juego(JUEGO* j, GRAFICADOR* graficador_ajeno ,int x, int y){
     j->graficador = graficador_ajeno;
     crear_matriz_vacia(&j->matriz, x, y);

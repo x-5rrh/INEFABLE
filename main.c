@@ -35,6 +35,7 @@ int main()
         return 0;
     }
     //
+
     constructor_graficador(&graficador, MAX_X, MAX_Y);
     contructor_maestro(&maestro, &graficador, 20, 10); //inicializamos todas las propiedades de TDA JUEGO
     while(maestro.estado_juego != -1){
@@ -43,6 +44,7 @@ int main()
         gbt_volcar_backbuffer();
         gbt_esperar(16);
     }
+
     gbt_destruir_ventana();
     gbt_cerrar();
 
