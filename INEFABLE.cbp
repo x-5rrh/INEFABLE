@@ -37,6 +37,7 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="FIGURA.h" />
+		<Unit filename="GRAFICADOR.h" />
 		<Unit filename="JUEGO.h" />
 		<Unit filename="MAESTRO.h" />
 		<Unit filename="MATRIZ.h">
@@ -44,6 +45,9 @@
 		</Unit>
 		<Unit filename="MENU.h" />
 		<Unit filename="figura.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="graficador.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="juego.c">
