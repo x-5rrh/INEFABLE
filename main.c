@@ -32,6 +32,7 @@ int main()
     //
     contructor_juego(&maestro, 854, 480, 20, 10); //inicializamos todas las propiedades de TDA JUEGO
     while(juego.estado_juego != -1){
+        gbt_procesar_entrada();
         //*DIBUJO GENERAL
         alternar_estados(&maestro);
         gbt_volcar_backbuffer();
