@@ -2,7 +2,7 @@
 #include "MATRIZ.h"
 
 int crear_matriz_vacia(MATRIZ* m ,int fil, int col){
-    if(!m->is_created) return -1;
+    if(m->is_created) return -1;
     m->filas = fil;
     m->columnas = col;
     m->is_especial = 0;
@@ -20,7 +20,7 @@ int crear_matriz_vacia(MATRIZ* m ,int fil, int col){
 }
 
 int crear_matriz_molde(MATRIZ* m, int *molde, int fil, int col){
-    if(!m->is_created) return -1;
+    if(m->is_created) return -1;
     int indice_molde = 0;
     m->filas = fil;
     m->columnas = col;

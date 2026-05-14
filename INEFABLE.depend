@@ -47,7 +47,7 @@
 
 1778480260 v:\universidad\topicos_de_programacion-2026\inefable\tablero.h
 
-1778738594 source:v:\universidad\topicos_de_programacion-2026\inefable\main.c
+1778739699 source:v:\universidad\topicos_de_programacion-2026\inefable\main.c
 	<stdio.h>
 	<stdlib.h>
 	"GBT/gbt.h"
@@ -76,46 +76,48 @@
 	<stdlib.h>
 	<stdint.h>
 
-1778737695 v:\universidad\topicos_de_programacion-2026\inefable\juego.h
+1778739130 v:\universidad\topicos_de_programacion-2026\inefable\juego.h
 	"GRAFICADOR.h"
 	"MATRIZ.h"
 
-1778738025 source:v:\universidad\topicos_de_programacion-2026\inefable\menu.c
-	"MENU.h"
+1778740165 source:v:\universidad\topicos_de_programacion-2026\inefable\menu.c
+	<stdio.h>
 	"GBT/gbt.h"
 	"GRAFICADOR.h"
+	"MENU.h"
+	"MATRIZ.h"
 
-1778737695 v:\universidad\topicos_de_programacion-2026\inefable\menu.h
+1778739439 v:\universidad\topicos_de_programacion-2026\inefable\menu.h
 	"GRAFICADOR.h"
 
-1778738076 source:v:\universidad\topicos_de_programacion-2026\inefable\juego.c
+1778739130 source:v:\universidad\topicos_de_programacion-2026\inefable\juego.c
 	<stdio.h>
 	<stdlib.h>
 	"GBT/gbt.h"
 	"JUEGO.h"
 	"MATRIZ.h"
 
-1778737695 v:\universidad\topicos_de_programacion-2026\inefable\graficador.h
+1778739130 v:\universidad\topicos_de_programacion-2026\inefable\graficador.h
 	"GBT/gbt.h"
 	"MATRIZ.h"
 
-1778737695 v:\universidad\topicos_de_programacion-2026\inefable\matriz.h
+1778739130 v:\universidad\topicos_de_programacion-2026\inefable\matriz.h
 
-1778737695 v:\universidad\topicos_de_programacion-2026\inefable\maestro.h
+1778739130 v:\universidad\topicos_de_programacion-2026\inefable\maestro.h
 	"JUEGO.h"
 	"FIGURA.h"
 	"MENU.h"
 	"GRAFICADOR.h"
 
-1778737695 source:v:\universidad\topicos_de_programacion-2026\inefable\maestro.c
+1778739130 source:v:\universidad\topicos_de_programacion-2026\inefable\maestro.c
 	"MAESTRO.h"
 	"MENU.h"
 
-1778737695 source:v:\universidad\topicos_de_programacion-2026\inefable\matriz.c
+1778740034 source:v:\universidad\topicos_de_programacion-2026\inefable\matriz.c
 	<stdlib.h>
 	"MATRIZ.h"
 
-1778738246 source:v:\universidad\topicos_de_programacion-2026\inefable\graficador.c
+1778739130 source:v:\universidad\topicos_de_programacion-2026\inefable\graficador.c
 	"GRAFICADOR.h"
 	<stdio.h>
 	<stdlib.h>

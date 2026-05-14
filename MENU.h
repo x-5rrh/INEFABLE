@@ -4,6 +4,7 @@
 
 typedef struct{
     GRAFICADOR* graficador;
+    int is_render;
     int* difucultad;
     int* estado;
 }MENU;
