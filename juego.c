@@ -6,14 +6,13 @@
 
 void dibujar_cuadrado(JUEGO*, int, int, int);
 
-void constructor_tablero(JUEGO* tablero ,int x, int y, int size_f){
-    tablero->size_f = size_f;
-
-    crear_matriz(&tablero->matriz, x, y);
+void constructor_juego(JUEGO* j, GRAFICADOR* graficador_ajeno ,int x, int y){
+    j->graficador = graficador_ajeno;
+    crear_matriz_vacia(&j->matriz, x, y);
 }
 
-void dibujar_tablero(JUEGO* j){
-    int i, j,
+void dibujar_juego(JUEGO* j){
+    /*int i, j,
     pixel_x_inicial ,
     pixel_y_inicial;
 
@@ -27,13 +26,5 @@ void dibujar_tablero(JUEGO* j){
                 dibujar_cuadrado(t, pixel_x_inicial, pixel_y_inicial, 7);
             }
         }
-    }
-}
-
-void dibujar_cuadrado(JUEGO* t, int pixel_x_inicial, int pixel_y_inicial, int color){
-     for(int i = 0; i < t->size_f; i++) {
-        for(int j = 0; j < t->size_f; j++) {
-            gbt_dibujar_pixel(pixel_x_inicial + i, pixel_y_inicial + j, color);
-        }
-    }
+    } */
 }

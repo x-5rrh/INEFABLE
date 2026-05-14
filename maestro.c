@@ -1,23 +1,21 @@
 #include "MAESTRO.h"
 #include "MENU.h"
-#define TAMANIO_BLOQUE 20
 
-void contructor_juego(MAESTRO* m, int max_ancho, int max_alto, int filas, int columnas){
-    m->tamanio_bloque = TAMANIO_BLOQUE; //CONSTANTE
-    m->offset_x = max_ancho;
-    m->offset_y = max_alto;
+void contructor_maestro(MAESTRO* m, GRAFICADOR* graficador_ajeno, int filas, int columnas){
     m->puntos = 0;
     m->estado_juego = 0; //0 = MENU
-    constructor_tablero(&m->tablero, filas, columnas, juego->tamanio_bloque);
+    m->graficador = graficador_ajeno;
+    constructor_juego(&m->juego, graficador_ajeno, filas, columnas);
+    constructor_menu(&m->menu, graficador_ajeno, m->dificultad);
 }
 
-void alternar_estados(MAESTRO* j){
-    switch(j->estado_juego){
+void alternar_estados(MAESTRO* m){
+    switch(m->estado_juego){
         case 0:
-            dibujar_menu(&j->menu, j->offset_x, j->offset_y);
+            dibujar_menu(&m->menu);
             break;
         case 1:
-            dibujar_tablero(&j->tablero);
+            dibujar_juego(&m->juego);
             break;
         case 2:
 

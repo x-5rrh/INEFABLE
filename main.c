@@ -19,19 +19,25 @@ Entrega: Sí
 #include <stdlib.h>
 #include "GBT/gbt.h"
 #include "MAESTRO.h"
+#include "GRAFICADOR.h"
+#define MAX_X 854
+#define MAX_Y 480
+#define BLOQUE 30
 
 int main()
 {
     MAESTRO maestro;
+    GRAFICADOR graficador;
     //GBT
     gbt_iniciar();
-    if(gbt_crear_ventana("TETRIS INEFABLE", 854, 480, 2) != 0){
+    if(gbt_crear_ventana("TETRIS INEFABLE", MAX_X, MAX_Y, 2) != 0){
         printf("ALGO SALIO MAL!!!!");
         return 0;
     }
     //
-    contructor_juego(&maestro, 854, 480, 20, 10); //inicializamos todas las propiedades de TDA JUEGO
-    while(juego.estado_juego != -1){
+    constructor_graficador(&graficador, MAX_X, MAX_Y);
+    contructor_maestro(&maestro, &graficador, 20, 10); //inicializamos todas las propiedades de TDA JUEGO
+    while(maestro.estado_juego != -1){
         //*DIBUJO GENERAL
         alternar_estados(&maestro);
         gbt_volcar_backbuffer();

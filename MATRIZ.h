@@ -6,10 +6,12 @@ typedef struct {
     int filas;
     int columnas;
     int is_especial;
+    int is_created;
     int bloque_especial[8][8];
 }MATRIZ;
 
-void crear_matriz(MATRIZ* m,int fil, int col);
+int crear_matriz_vacia(MATRIZ* m,int fil, int col);
+int crear_matriz_molde(MATRIZ* m, int *molde, int fil, int col);
 void cambiar_indice(MATRIZ* m ,int fil, int col, int valor);
 int fila_llena(MATRIZ* m , int fil);
 void eliminar_matriz(MATRIZ* m);

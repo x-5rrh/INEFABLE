@@ -38,21 +38,27 @@
 		</Compiler>
 		<Unit filename="FIGURA.h" />
 		<Unit filename="JUEGO.h" />
+		<Unit filename="MAESTRO.h" />
+		<Unit filename="MATRIZ.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="MENU.h" />
-		<Unit filename="TABLERO.h" />
 		<Unit filename="figura.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="juego.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="maestro.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="menu.c">
+		<Unit filename="matriz.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="tablero.c">
+		<Unit filename="menu.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions />

@@ -32,9 +32,9 @@
 1777401411 source:c:\users\huayr\onedrive\documentos\trabajo de topicos\inefable\dibujos.c
 	"dibujos.h"
 
-1778368106 source:v:\universidad\topicos_de_programacion-2026\inefable\figura.c
+1778589869 source:v:\universidad\topicos_de_programacion-2026\inefable\figura.c
 	<stdio.h>
-	"figura.h"
+	"FIGURA.h"
 
 1778374523 v:\universidad\topicos_de_programacion-2026\inefable\figura.h
 
@@ -47,12 +47,12 @@
 
 1778480260 v:\universidad\topicos_de_programacion-2026\inefable\tablero.h
 
-1778482072 source:v:\universidad\topicos_de_programacion-2026\inefable\main.c
+1778674067 source:v:\universidad\topicos_de_programacion-2026\inefable\main.c
 	<stdio.h>
 	<stdlib.h>
 	"GBT/gbt.h"
-	"JUEGO.h"
-	"TABLERO.h"
+	"MAESTRO.h"
+	"GRAFICADOR.h"
 
 1778364964 v:\universidad\topicos_de_programacion-2026\inefable\lib\gbt_v2026.1c.01\include\gbt\gbt.h
 	"gbt_entrada.h"
@@ -76,18 +76,48 @@
 	<stdlib.h>
 	<stdint.h>
 
-1778480279 v:\universidad\topicos_de_programacion-2026\inefable\juego.h
-	"TABLERO.h"
-	"FIGURA.h"
-	"MENU.h"
+1778594830 v:\universidad\topicos_de_programacion-2026\inefable\juego.h
+	"GRAFICADOR.h"
+	"MATRIZ.h"
 
-1778481600 source:v:\universidad\topicos_de_programacion-2026\inefable\menu.c
+1778678643 source:v:\universidad\topicos_de_programacion-2026\inefable\menu.c
 	"MENU.h"
 	"GBT/gbt.h"
+	"GRAFICADOR.h"
 
-1778480001 v:\universidad\topicos_de_programacion-2026\inefable\menu.h
+1778595097 v:\universidad\topicos_de_programacion-2026\inefable\menu.h
+	"GRAFICADOR.h"
 
-1778481597 source:v:\universidad\topicos_de_programacion-2026\inefable\juego.c
+1778625722 source:v:\universidad\topicos_de_programacion-2026\inefable\juego.c
+	<stdio.h>
+	<stdlib.h>
+	"GBT/gbt.h"
 	"JUEGO.h"
+	"MATRIZ.h"
+
+1778736405 v:\universidad\topicos_de_programacion-2026\inefable\graficador.h
+	"GBT/gbt.h"
+	"MATRIZ.h"
+
+1778628260 v:\universidad\topicos_de_programacion-2026\inefable\matriz.h
+
+1778595128 v:\universidad\topicos_de_programacion-2026\inefable\maestro.h
+	"JUEGO.h"
+	"FIGURA.h"
 	"MENU.h"
+	"GRAFICADOR.h"
+
+1778595155 source:v:\universidad\topicos_de_programacion-2026\inefable\maestro.c
+	"MAESTRO.h"
+	"MENU.h"
+
+1778736613 source:v:\universidad\topicos_de_programacion-2026\inefable\matriz.c
+	<stdlib.h>
+	"MATRIZ.h"
+
+1778736480 source:v:\universidad\topicos_de_programacion-2026\inefable\graficador.c
+	"GRAFICADOR.h"
+	<stdio.h>
+	<stdlib.h>
+	"GBT/gbt.h"
 
