@@ -7,9 +7,9 @@
 MATRIZ matriz;
 int letra_c[] = {
     1,  1,  1,  1,
-    1, 2, 1, 2,
+    14, 2, 1, 2,
     1 ,2, 5, 2,
-    1,  1,  1,  0,
+    1,  5,  1,  0,
 };
 
 void constructor_menu(MENU* menu, GRAFICADOR* graficador_ajeno, int* dificulta_m){
@@ -24,5 +24,5 @@ void dibujar_menu(MENU* menu){
          menu->is_render = 1;
     }
     gbt_borrar_backbuffer(12);
-    graficar_matriz(menu->graficador, &matriz, 20, 20, 50);
+    graficar_matriz(menu->graficador, &matriz, (menu->graficador->offset_x / 2) - ((matriz.columnas * 50) / 2), (menu->graficador->offset_y / 2) - ((matriz.filas * 50) / 2), 50);
 }

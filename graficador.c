@@ -27,7 +27,18 @@ void graficar_matriz(GRAFICADOR* g, MATRIZ* m, int cord_x, int cord_y, int escal
     }
 }
 
-void graficar_cuadrado(int pos_x, int pos_y, int lado, int color) {
+void graficar_palabra(GRAFICADOR* g, char c[], int cord_x, int cord_y, int escala){
+    int i = 0;
+    while(c[i] != 0){
+        switch(c[i]){
+            case 72:
+                graficar_matriz(g, g->letra, )
+            break;
+        }
+    }
+}
+
+static void graficar_cuadrado(int pos_x, int pos_y, int lado, int color) {
     int ancho, alto;
     for (ancho = 0; ancho < lado; ancho++) {
         for (alto = 0; alto < lado; alto++) {

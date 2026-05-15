@@ -80,7 +80,7 @@
 	"GRAFICADOR.h"
 	"MATRIZ.h"
 
-1778740165 source:v:\universidad\topicos_de_programacion-2026\inefable\menu.c
+1778741188 source:v:\universidad\topicos_de_programacion-2026\inefable\menu.c
 	<stdio.h>
 	"GBT/gbt.h"
 	"GRAFICADOR.h"
@@ -97,7 +97,7 @@
 	"JUEGO.h"
 	"MATRIZ.h"
 
-1778739130 v:\universidad\topicos_de_programacion-2026\inefable\graficador.h
+1778788002 v:\universidad\topicos_de_programacion-2026\inefable\graficador.h
 	"GBT/gbt.h"
 	"MATRIZ.h"
 
