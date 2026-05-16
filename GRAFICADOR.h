@@ -5,13 +5,15 @@
 
 
 typedef struct {
-    int offset_x;
-    int offset_y;
+    int screen_x;
+    int screen_y;
+    int mid_screen_x;
+    int mid_screen_y;
     int unidad_base;
     MATRIZ *letra;
 } GRAFICADOR;
 
-void constructor_graficador(GRAFICADOR* g, int x, int y);
+void constructor_graficador(GRAFICADOR* g, int x, int y, int bloque);
 static void graficar_cuadrado(int pos_x, int pos_y, int lado, int color);
 void graficar_matriz(GRAFICADOR* g, MATRIZ* m, int cord_x, int cord_y, int escala);
 void graficar_palabra(GRAFICADOR* g, char[], int cord_x, int cord_y, int escala);

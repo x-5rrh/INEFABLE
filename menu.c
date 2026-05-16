@@ -24,5 +24,5 @@ void dibujar_menu(MENU* menu){
          menu->is_render = 1;
     }
     gbt_borrar_backbuffer(12);
-    graficar_matriz(menu->graficador, &matriz, (menu->graficador->offset_x / 2) - ((matriz.columnas * 50) / 2), (menu->graficador->offset_y / 2) - ((matriz.filas * 50) / 2), 50);
+    graficar_matriz(menu->graficador, &matriz, (menu->graficador->screen_x / 2) - ((matriz.columnas * 50) / 2), (menu->graficador->screen_y / 2) - ((matriz.filas * 50) / 2), 50);
 }

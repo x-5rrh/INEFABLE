@@ -4,9 +4,12 @@
 #include "GBT/gbt.h"
 
 
-void constructor_graficador(GRAFICADOR* g, int x, int y){
-    g->offset_x = x;
-    g->offset_y = y;
+void constructor_graficador(GRAFICADOR* g, int x, int y, int unidad_default){
+    g->screen_x = x;
+    g->screen_y = y;
+    g->mid_screen_x = (int)x / 2;
+    g->mid_screen_y = (int) y / 2;
+    g->unidad_base = unidad_default;
 }
 
 void graficar_matriz(GRAFICADOR* g, MATRIZ* m, int cord_x, int cord_y, int escala) {

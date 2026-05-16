@@ -3,9 +3,9 @@
 
 void contructor_maestro(MAESTRO* m, GRAFICADOR* graficador_ajeno, int filas, int columnas){
     m->puntos = 0;
-    m->estado_juego = 1; //0 = MENU
+    m->estado_juego = 1; //0 = MENU 1 = JUEGO 2 = GAMEOVER
     m->graficador = graficador_ajeno;
-    constructor_juego(&m->juego, graficador_ajeno, filas, columnas);
+    constructor_juego(&m->juego, graficador_ajeno, filas, columnas, m->dificultad);
     constructor_menu(&m->menu, graficador_ajeno, m->dificultad);
 }
 

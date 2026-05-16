@@ -1,4 +1,4 @@
 #include <stdio.h>
-#include "FIGURA.h"
+#include "PIEZA.h"
 
 

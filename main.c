@@ -2,17 +2,17 @@
 Apellido: Russo Rodriguez, Nahuel Sebastian
 DNI: 43820382
 Usuario: x-5rrh
-Entrega: S�
+Entrega: Si
 
 Apellido: Blanco, Priscila
 DNI: 44355393
 Usuario: PriWhite
-Entrega: S�
+Entrega: Si
 
 Apellido: Benito, Pablo
 DNI: 43569575
 Usuario: PabloBeni
-Entrega: S�
+Entrega: Si
 */
 
 #include <stdio.h>
@@ -22,7 +22,7 @@ Entrega: S�
 #include "GRAFICADOR.h"
 #define MAX_X 854
 #define MAX_Y 480
-#define BLOQUE 30
+#define BLOQUE 25
 
 int main()
 {
@@ -36,7 +36,7 @@ int main()
     }
     //
 
-    constructor_graficador(&graficador, MAX_X, MAX_Y);
+    constructor_graficador(&graficador, MAX_X, MAX_Y, BLOQUE);
     contructor_maestro(&maestro, &graficador, 20, 10); //inicializamos todas las propiedades de TDA JUEGO
     while(maestro.estado_juego != -1){
         gbt_procesar_entrada();

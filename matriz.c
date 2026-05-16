@@ -12,7 +12,7 @@ int crear_matriz_vacia(MATRIZ* m ,int fil, int col){
         m->matriz[i] = calloc(col, sizeof(int));
 
         for (int j = 0; j < col; j++) { //llenamos la matriz con "aire"
-            m->matriz[i][j] = -1;
+            m->matriz[i][j] = 3;
         }
     }
 
