@@ -27,7 +27,7 @@ void graficar_matriz(GRAFICADOR* g, MATRIZ* m, int cord_x, int cord_y, int escal
     }
 }
 
-void graficar_palabra(GRAFICADOR* g, char c[], int cord_x, int cord_y, int escala){
+/*void graficar_palabra(GRAFICADOR* g, char c[], int cord_x, int cord_y, int escala){
     int i = 0;
     while(c[i] != 0){
         switch(c[i]){
@@ -36,7 +36,7 @@ void graficar_palabra(GRAFICADOR* g, char c[], int cord_x, int cord_y, int escal
             break;
         }
     }
-}
+}*/
 
 static void graficar_cuadrado(int pos_x, int pos_y, int lado, int color) {
     int ancho, alto;
