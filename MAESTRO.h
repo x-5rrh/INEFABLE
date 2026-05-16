@@ -1,14 +1,14 @@
 #ifndef JUEGO_H_INCLUDED
 #define JUEGO_H_INCLUDED
 #include "JUEGO.h"
-#include "FIGURA.h"
+#include "PIEZA.h"
 #include "MENU.h"
 #include "GRAFICADOR.h"
 
 //MAESTRO tiene, por asi decirlo, los datos originale. El resto de TDA tiene una "copia", pueden modificarlo pero para manetener la jerarquia maestro tiene el acceso total de estos//
 typedef struct{
     JUEGO juego;
-    FIGURA figura;
+    PIEZA pieza;
     MENU menu;
     GRAFICADOR* graficador;
     int estado_juego; //0 = MENU, 1 = JUEGO, 2 = GAME OVER

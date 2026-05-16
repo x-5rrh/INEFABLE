@@ -4,12 +4,12 @@
 
 typedef struct{
     MATRIZ pieza;
-    int x;
-    int y;
-}FIGURA;
+    int cord_fila;
+    int cord_columna;
+}PIEZA;
 
-void contructor_figura(FIGURA* g);
-void rotar_figura(FIGURA* g);
-void mover_figura(FIGURA* g);
+void crear_pieza(PIEZA* pieza, int indice_pieza, int cord_x, int cord_y);
+void rotar_figura(PIEZA* p);
+void mover_figura(PIEZA* p);
 
 #endif // FIGURA_H_INCLUDED

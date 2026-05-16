@@ -7,7 +7,8 @@
 typedef struct{
     MATRIZ matriz;
     GRAFICADOR* graficador;
-    FIGURA figura;
+    PIEZA pieza_actual;
+    PIEZA pieza_siguiente;
     int *puntos;
     int *dificultad;
 

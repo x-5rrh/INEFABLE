@@ -17,6 +17,7 @@ Entrega: Si
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include "GBT/gbt.h"
 #include "MAESTRO.h"
 #include "GRAFICADOR.h"
@@ -28,6 +29,7 @@ int main()
 {
     MAESTRO maestro;
     GRAFICADOR graficador;
+    srand(time(NULL));
     //GBT
     gbt_iniciar();
     if(gbt_crear_ventana("TETRIS INEFABLE", MAX_X, MAX_Y, 2) != 0){

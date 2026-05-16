@@ -47,9 +47,10 @@
 
 1778480260 v:\universidad\topicos_de_programacion-2026\inefable\tablero.h
 
-1778903060 source:v:\universidad\topicos_de_programacion-2026\inefable\main.c
+1778967046 source:v:\universidad\topicos_de_programacion-2026\inefable\main.c
 	<stdio.h>
 	<stdlib.h>
+	<time.h>
 	"GBT/gbt.h"
 	"MAESTRO.h"
 	"GRAFICADOR.h"
@@ -76,9 +77,10 @@
 	<stdlib.h>
 	<stdint.h>
 
-1778902159 v:\universidad\topicos_de_programacion-2026\inefable\juego.h
+1778906513 v:\universidad\topicos_de_programacion-2026\inefable\juego.h
 	"GRAFICADOR.h"
 	"MATRIZ.h"
+	"PIEZA.h"
 
 1778902857 source:v:\universidad\topicos_de_programacion-2026\inefable\menu.c
 	<stdio.h>
@@ -90,22 +92,22 @@
 1778901743 v:\universidad\topicos_de_programacion-2026\inefable\menu.h
 	"GRAFICADOR.h"
 
-1778903030 source:v:\universidad\topicos_de_programacion-2026\inefable\juego.c
+1778969516 source:v:\universidad\topicos_de_programacion-2026\inefable\juego.c
 	<stdio.h>
 	<stdlib.h>
 	"GBT/gbt.h"
 	"JUEGO.h"
 	"MATRIZ.h"
 
-1778902712 v:\universidad\topicos_de_programacion-2026\inefable\graficador.h
+1778968394 v:\universidad\topicos_de_programacion-2026\inefable\graficador.h
 	"GBT/gbt.h"
 	"MATRIZ.h"
 
 1778901743 v:\universidad\topicos_de_programacion-2026\inefable\matriz.h
 
-1778901743 v:\universidad\topicos_de_programacion-2026\inefable\maestro.h
+1778953774 v:\universidad\topicos_de_programacion-2026\inefable\maestro.h
 	"JUEGO.h"
-	"FIGURA.h"
+	"PIEZA.h"
 	"MENU.h"
 	"GRAFICADOR.h"
 
@@ -113,13 +115,21 @@
 	"MAESTRO.h"
 	"MENU.h"
 
-1778903057 source:v:\universidad\topicos_de_programacion-2026\inefable\matriz.c
+1778969823 source:v:\universidad\topicos_de_programacion-2026\inefable\matriz.c
 	<stdlib.h>
 	"MATRIZ.h"
 
-1778902805 source:v:\universidad\topicos_de_programacion-2026\inefable\graficador.c
+1778968913 source:v:\universidad\topicos_de_programacion-2026\inefable\graficador.c
 	"GRAFICADOR.h"
 	<stdio.h>
 	<stdlib.h>
 	"GBT/gbt.h"
+
+1778966954 v:\universidad\topicos_de_programacion-2026\inefable\pieza.h
+	"MATRIZ.h"
+
+1778969509 source:v:\universidad\topicos_de_programacion-2026\inefable\pieza.c
+	<stdio.h>
+	"PIEZA.h"
+	"MATRIZ.h"
 

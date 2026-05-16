@@ -30,6 +30,16 @@ void graficar_matriz(GRAFICADOR* g, MATRIZ* m, int cord_x, int cord_y, int escal
     }
 }
 
+void graficar_matriz_consola(MATRIZ* m){
+    int i, j;
+    for(j = 0; i < m->filas; i++){
+        for(j = 0; j < m->columnas; j++){
+            printf("%d \t|", m->matriz[i][j]);
+        }
+        printf("\n");
+    }
+}
+
 /*void graficar_palabra(GRAFICADOR* g, char c[], int cord_x, int cord_y, int escala){
     int i = 0;
     while(c[i] != 0){
