@@ -1,13 +1,28 @@
-#include "MENU.h"
+#include <stdio.h>
 #include "GBT/gbt.h"
+#include "GRAFICADOR.h"
+#include "MENU.h"
+#include "MATRIZ.h"
 
-void dibujar_menu(MENU* menu, int offset_x, int offset_y){
-    int i, j;
-    gbt_borrar_backbuffer(5);
+MATRIZ matriz;
+int letra_c[] = {
+    1,  1,  1,  1,
+    14, 2, 1, 2,
+    1 ,2, 5, 2,
+    1,  5,  1,  0,
+};
 
-    for(i = 0; i < offset_x; i++){
-        for(j = 0; j < offset_y; j++){
+void constructor_menu(MENU* menu, GRAFICADOR* graficador_ajeno, int* dificulta_m){
+    menu->difucultad = dificulta_m;
+    menu->graficador = graficador_ajeno;
+    menu->is_render = 0;
+}
 
-        }
+void dibujar_menu(MENU* menu){
+    if(menu->is_render == 0 ){
+        crear_matriz_molde(&matriz, letra_c, 4, 4);
+         menu->is_render = 1;
     }
+    gbt_borrar_backbuffer(12);
+    graficar_matriz(menu->graficador, &matriz, (menu->graficador->offset_x / 2) - ((matriz.columnas * 50) / 2), (menu->graficador->offset_y / 2) - ((matriz.filas * 50) / 2), 50);
 }
