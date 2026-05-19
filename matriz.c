@@ -62,4 +62,5 @@ void eliminar_matriz(MATRIZ* m){
     m->matriz = NULL;
     m->filas = 0;
     m->columnas = 0;
+    m->is_created = 0;
 }

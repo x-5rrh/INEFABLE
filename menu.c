@@ -12,8 +12,8 @@ int letra_c[] = {
     1,  5,  1,  0,
 };
 
-void constructor_menu(MENU* menu, GRAFICADOR* graficador_ajeno, int* dificulta_m){
-    menu->difucultad = dificulta_m;
+void constructor_menu(MENU* menu, GRAFICADOR* graficador_ajeno, double* velocidad){
+    menu->velocidad = velocidad;
     menu->graficador = graficador_ajeno;
     menu->is_render = 0;
 }
@@ -21,7 +21,7 @@ void constructor_menu(MENU* menu, GRAFICADOR* graficador_ajeno, int* dificulta_m
 void dibujar_menu(MENU* menu){
     if(menu->is_render == 0 ){
         crear_matriz_molde(&matriz, letra_c, 4, 4);
-         menu->is_render = 1;
+        menu->is_render = 1;
     }
     gbt_borrar_backbuffer(12);
     graficar_matriz(menu->graficador, &matriz, (menu->graficador->screen_x / 2) - ((matriz.columnas * 50) / 2), (menu->graficador->screen_y / 2) - ((matriz.filas * 50) / 2), 50);

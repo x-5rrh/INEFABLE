@@ -12,7 +12,7 @@ typedef struct {
 
 int crear_matriz_vacia(MATRIZ* m,int fil, int col);
 int crear_matriz_molde(MATRIZ* m, int *molde, int fil, int col);
-void cambiar_indice(MATRIZ* m ,int fil, int col, int valor);
+//void matriz_copiar_pieza(MATRIZ* m, PIEZA* p);
 int fila_llena(MATRIZ* m , int fil);
 void eliminar_matriz(MATRIZ* m);
 

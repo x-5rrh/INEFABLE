@@ -41,11 +41,14 @@ int main()
     constructor_graficador(&graficador, MAX_X, MAX_Y, BLOQUE);
     contructor_maestro(&maestro, &graficador, 20, 10); //inicializamos todas las propiedades de TDA JUEGO
     while(maestro.estado_juego != -1){
-        gbt_procesar_entrada();
-        //*DIBUJO GENERAL
-        alternar_estados(&maestro);
-        gbt_volcar_backbuffer();
         gbt_esperar(16);
+        gbt_procesar_entrada();
+        //DIBUJO GENERAL
+        gbt_borrar_backbuffer(0);
+        maestro_dibujar(&maestro);
+        gbt_volcar_backbuffer();
+        //ACTUZALIZAR JUEGO (movimiento)
+        maestro_actualizar(&maestro);
     }
 
     gbt_destruir_ventana();

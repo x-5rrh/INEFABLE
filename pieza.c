@@ -14,9 +14,20 @@ static int *pieza_lista[7] = {pieza_1, pieza_2, pieza_3, pieza_4, pieza_5, pieza
 static int pieza_fil[7] = {3, 3, 2, 2, 2, 2, 1};
 static int pieza_col[7] = {3, 2, 3, 2, 3, 3, 4};
 
-void crear_pieza(PIEZA* p, int indice_pieza, int cord_x, int cord_y){
-    p->cord_columna = cord_y;
-    p->cord_fila = cord_x;
+void crear_pieza(PIEZA* p, int indice_pieza, int fil, int col){
+    p->cord_fila = fil;
+    p->cord_columna = col;
+    p->id = indice_pieza;
     crear_matriz_molde(&p->pieza, pieza_lista[indice_pieza], pieza_fil[indice_pieza], pieza_col[indice_pieza]);
+}
 
+void pieza_bajar(PIEZA* p, int cantidad){
+    p->cord_fila += cantidad;
+}
+
+void pieza_eliminar(PIEZA* p){
+    p->cord_columna = -1;
+    p->cord_fila = -1;
+    p->id = -1;
+    eliminar_matriz(&p->pieza);
 }

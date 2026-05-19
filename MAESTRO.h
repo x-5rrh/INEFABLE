@@ -12,13 +12,13 @@ typedef struct{
     MENU menu;
     GRAFICADOR* graficador;
     int estado_juego; //0 = MENU, 1 = JUEGO, 2 = GAME OVER
-    int* dificultad;
-    int* velocidad;
+    double* velocidad;
     int* puntos;
     int* modo_juego;
 }MAESTRO;
 
 void contructor_maestro(MAESTRO* m, GRAFICADOR* g ,int filas, int columnas);
-void alternar_estados(MAESTRO* m);
+void maestro_dibujar(MAESTRO* m);
+void maestro_actualizar(MAESTRO* m);
 
 #endif // JUEGO_H_INCLUDED

@@ -47,7 +47,7 @@
 
 1778480260 v:\universidad\topicos_de_programacion-2026\inefable\tablero.h
 
-1778967046 source:v:\universidad\topicos_de_programacion-2026\inefable\main.c
+1779049031 source:v:\universidad\topicos_de_programacion-2026\inefable\main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -77,22 +77,22 @@
 	<stdlib.h>
 	<stdint.h>
 
-1778906513 v:\universidad\topicos_de_programacion-2026\inefable\juego.h
+1779164971 v:\universidad\topicos_de_programacion-2026\inefable\juego.h
 	"GRAFICADOR.h"
 	"MATRIZ.h"
 	"PIEZA.h"
 
-1778902857 source:v:\universidad\topicos_de_programacion-2026\inefable\menu.c
+1779134396 source:v:\universidad\topicos_de_programacion-2026\inefable\menu.c
 	<stdio.h>
 	"GBT/gbt.h"
 	"GRAFICADOR.h"
 	"MENU.h"
 	"MATRIZ.h"
 
-1778901743 v:\universidad\topicos_de_programacion-2026\inefable\menu.h
+1779048496 v:\universidad\topicos_de_programacion-2026\inefable\menu.h
 	"GRAFICADOR.h"
 
-1778969516 source:v:\universidad\topicos_de_programacion-2026\inefable\juego.c
+1779164243 source:v:\universidad\topicos_de_programacion-2026\inefable\juego.c
 	<stdio.h>
 	<stdlib.h>
 	"GBT/gbt.h"
@@ -103,32 +103,33 @@
 	"GBT/gbt.h"
 	"MATRIZ.h"
 
-1778901743 v:\universidad\topicos_de_programacion-2026\inefable\matriz.h
+1779163311 v:\universidad\topicos_de_programacion-2026\inefable\matriz.h
 
-1778953774 v:\universidad\topicos_de_programacion-2026\inefable\maestro.h
+1779049052 v:\universidad\topicos_de_programacion-2026\inefable\maestro.h
 	"JUEGO.h"
 	"PIEZA.h"
 	"MENU.h"
 	"GRAFICADOR.h"
 
-1778902202 source:v:\universidad\topicos_de_programacion-2026\inefable\maestro.c
+1779165100 source:v:\universidad\topicos_de_programacion-2026\inefable\maestro.c
 	"MAESTRO.h"
 	"MENU.h"
+	"JUEGO.h"
 
-1778969823 source:v:\universidad\topicos_de_programacion-2026\inefable\matriz.c
+1779163304 source:v:\universidad\topicos_de_programacion-2026\inefable\matriz.c
 	<stdlib.h>
 	"MATRIZ.h"
 
-1778968913 source:v:\universidad\topicos_de_programacion-2026\inefable\graficador.c
+1779148336 source:v:\universidad\topicos_de_programacion-2026\inefable\graficador.c
 	"GRAFICADOR.h"
 	<stdio.h>
 	<stdlib.h>
 	"GBT/gbt.h"
 
-1778966954 v:\universidad\topicos_de_programacion-2026\inefable\pieza.h
+1779143259 v:\universidad\topicos_de_programacion-2026\inefable\pieza.h
 	"MATRIZ.h"
 
-1778969509 source:v:\universidad\topicos_de_programacion-2026\inefable\pieza.c
+1779142618 source:v:\universidad\topicos_de_programacion-2026\inefable\pieza.c
 	<stdio.h>
 	"PIEZA.h"
 	"MATRIZ.h"
